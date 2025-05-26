@@ -1,0 +1,164 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #18308e;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.mode-selection {
+  margin-bottom: 30px;
+}
+
+.mode-btn {
+  padding: 15px 30px;
+  margin: 0 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.normal-btn {
+  background-color: #ff7f50; /* arancio */
+  color: white;
+}
+
+.normal-btn:hover {
+  background-color: #e6693c;
+}
+
+.black-btn {
+  background-color: #FFD700; /* giallo */
+  color: rgb(0, 0, 0);
+}
+
+.black-btn:hover {
+  background-color: #FFC107;
+}
+
+.hidden {
+  display: none;
+}
+
+.category {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.timer {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+#newRound, #pauseButton, #backToModeSelection {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+#newRound {
+  background-color: #ff7f50;
+  color: white;
+}
+
+#newRound:hover {
+  background-color: #e6693c;
+}
+
+#pauseButton {
+  background-color: #ff7f50;
+  color: white;
+}
+
+#pauseButton:hover {
+  background-color: #e6693c;
+}
+
+#backToModeSelection {
+  background-color: #ff7f50;
+  color: white;
+}
+
+#backToModeSelection:hover {
+  background-color: #e6693c;
+}
+
+.letters {
+  width: 460px;
+  height: 460px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+.letter {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  letter-spacing: 3px;
+}
+
+.letter:disabled {
+  background-color: red !important; /* Rosso dopo il click */
+  cursor: not-allowed;
+  color: white;
+}
+
+/* MODALITÀ BLACK HUMOR */
+body.black-humor {
+  background-color: #000000;
+  color: #FFD700;
+  background-image: url(images/neroback.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body.black-humor #newRound {
+  background-color: #FF0000; /* rosso */
+  color: white;
+}
+
+body.black-humor #newRound:hover {
+  background-color: #cc0000;
+}
+
+body.black-humor #pauseButton {
+  background-color: #FFD700; /* giallo */
+  color: black;
+}
+
+body.black-humor #pauseButton:hover {
+  background-color: #e6c200;
+}
+
+body.black-humor .letter {
+  background-color: #000000;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+}
+
+body.black-humor .letter:disabled {
+  background-color: red !important;
+  color: white;
+}
+
