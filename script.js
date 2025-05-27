@@ -7,7 +7,7 @@ const normalModeButton = document.getElementById("normalModeButton");
 const blackHumorModeButton = document.getElementById("blackHumorModeButton");
 const backToModeSelectionButton = document.getElementById("backToModeSelection");
 
-const italianLetters = "PEPE,B,C,D,E,F,G,I,L,M,N,O,P,Q,R,S,T,U,V,Z".split(",");
+const italianLetters = "A,B,C,D,E,F,G,I,L,M,N,O,P,Q,R,S,T,U,V,Z".split(",");
 let countdown;
 let usedLetters = new Set();
 let isPaused = false;
