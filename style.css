@@ -44,6 +44,16 @@ h1 {
   background-color: #FFC107;
 }
 
+.football-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.football-btn:hover {
+  background-color: #27ae60;
+}
+
+
 .hidden {
   display: none;
 }
@@ -162,3 +172,58 @@ body.black-humor .letter:disabled {
   color: white;
 }
 
+/* MODALITÀ CALCIO */
+body.football {
+  background-color: #0e7015; /* Verde campo da calcio */
+  color: white;
+  background-image: url(images/campocalcio.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 4px 4px 4px black;
+}
+
+body.football #newRound {
+  background-color: #f1c40f; /* Giallo pallone */
+  color: #0e7015;
+}
+
+body.football #newRound:hover {
+  background-color: #d4ac0d;
+}
+
+body.football #pauseButton {
+  background-color: #f1c40f;
+  color: #0e7015;
+}
+
+body.football #pauseButton:hover {
+  background-color: #d4ac0d;
+}
+
+body.football .letter {
+  background-color: rgb(255, 255, 255); /* base */
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 10px black;
+  background-image: url(images/fotball.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body.football .letter.clicked {
+  background-image: url(images/footballblack.PNG); /* metti qui l'immagine cliccata */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+body.football .letter:disabled {
+  background-color: red !important;
+  color: white;
+}
